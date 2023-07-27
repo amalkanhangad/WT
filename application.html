@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>College Information Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="font-family:'Poppins', sans-serif;">College Information Form</h2>
+    <form style="font-family:'Poppins', sans-serif;" action="#" method="post" >
+        <input type="text" id="first-name" name="first_name" required placeholder="First name"><br><br>
+        <input type="text" id="middle-name" name="middle_name" placeholder="Middle name"><br><br>
+        <input type="text" id="last-name" name="last_name" required placeholder="Last name"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="date_of_birth" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+        <textarea id="address" name="address" rows="4" cols="50" required placeholder="Address"></textarea><br><br>
+        <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+        <input type="tel" id="phone" name="phone" required placeholder="Phone"><br><br>
+
+        <fieldset style="margin-top: 40px;">
+            <legend>Education Information</legend>
+            <table>
+              <thead>
+                <tr>
+                  <th>SI No.</th>
+                  <th>Examination</th>
+                  <th>Board</th>
+                  <th>Percentage</th>
+                  <th>Year of Passing</th>
+                  <th>Upload Marlist</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Class X</td>
+                  <td><input /></td>
+                  <td><input /></td>
+                  <td><input /></td>
+                  <td><input type="file" id="myFile" name="filename" /></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Class XII</td>
+                  <td><input /></td>
+                  <td><input /></td>
+                  <td><input /></td>
+                  <td><input type="file" id="myFile" name="filename" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+          <div>
+            <input type="checkbox" value="ok" /><label>I have read and agreed to terms and conditions</label> <br>
+            <input type="submit" class="btn" value="Submit" />
+          </div>
+    </form>
+</body>
+
+</html>
